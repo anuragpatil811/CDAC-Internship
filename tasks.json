@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build with OpenMP",
+      "type": "shell",
+      "command": "gcc",
+      "args": [
+        "-fopenmp",
+        "montecarlo_pi.c",
+        "-o",
+        "montecarlo_pi.exe"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}
